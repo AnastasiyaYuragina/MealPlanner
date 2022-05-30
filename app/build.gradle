@@ -60,16 +60,6 @@ android {
         }
     }
 
-    signingConfigs {
-        debug {
-            storeFile file("debug.keystore")
-            keyAlias 'androiddebugkey'
-            keyPassword 'android'
-            storePassword 'android'
-
-        }
-    }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -146,8 +136,9 @@ dependencies {
     implementation "com.github.skydoves:landscapist-coil:1.4.3"
 
     //    firebase
-    implementation platform('com.google.firebase:firebase-bom:28.4.1')
-    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation platform('com.google.firebase:firebase-bom:30.1.0')
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
 
     //    test
     testImplementation 'junit:junit:4.13.2'

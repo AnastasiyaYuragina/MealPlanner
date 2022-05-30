@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "827236383606",
+    "firebase_url": "https://mealplanner-33721-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "mealplanner-33721",
+    "storage_bucket": "mealplanner-33721.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827236383606:android:0cb7e40e78e0b7e41d5857",
+        "android_client_info": {
+          "package_name": "com.anastasiyayuragina.mealplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827236383606-pgm7pdcucsnee70pf0c2h8emm8fq5fmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlxGpM4Kma9ovsNcMnJ1KUl1XrIIyUHmg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827236383606-pgm7pdcucsnee70pf0c2h8emm8fq5fmj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
