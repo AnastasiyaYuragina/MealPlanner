@@ -9,6 +9,7 @@ data class RecipeModel(
     val image: String? = null,
     val description: String? = null,
     val recipeUrl: String? = null,
-    val ingredientModels: List<IngredientModel>? = null
+    val ingredientModels: List<IngredientModel>,
+    val wasCooked: Boolean = false
 )
 
