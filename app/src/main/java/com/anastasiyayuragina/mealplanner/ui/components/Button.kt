@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.anastasiyayuragina.mealplanner.R
 
 @Composable
 fun ButtonGreen(modifier: Modifier = Modifier, text: String, onClick: () -> Unit) {
@@ -26,15 +27,13 @@ fun ButtonGreen(modifier: Modifier = Modifier, text: String, onClick: () -> Unit
 }
 
 @Composable
-fun FloatButton(modifier: Modifier = Modifier, iconRes: Int, onClick: () -> Unit) {
+fun FloatButton(modifier: Modifier = Modifier, onClick: () -> Unit) {
     FloatingActionButton(
         modifier = modifier,
-        onClick = onClick,
-        backgroundColor = MaterialTheme.colors.secondary,
-        contentColor = MaterialTheme.colors.onSecondary
+        onClick = onClick
     ) {
         Icon(
-            painter = painterResource(id = iconRes),
+            painter = painterResource(id = R.drawable.ic_plus),
             contentDescription = null
         )
     }
