@@ -12,12 +12,12 @@ private val DarkColorPalette = darkColors(
     primaryVariant = PersianGreen,
     secondary = Blue,
     secondaryVariant = ToreaBay,
-    background = Color.White,
-    surface = Color.White,
+    background = CodGray,
+    surface = CodGray,
     onPrimary = CodGray,
     onSecondary = Color.White,
-    onBackground = BastilleGrey,
-    onSurface = BastilleGrey,
+    onBackground = Color.White,
+    onSurface = Color.White,
     error = Red
 )
 

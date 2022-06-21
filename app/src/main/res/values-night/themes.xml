@@ -11,16 +11,7 @@
         <item name="colorSecondaryVariant">@color/torea_bay</item>
         <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorOnPrimary</item>
         <item name="android:navigationBarColor">?attr/colorPrimary</item>
     </style>
-
-    <style name="Theme.MealPlanner.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="Theme.MealPlanner.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.MealPlanner.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

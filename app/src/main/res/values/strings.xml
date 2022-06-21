@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MealPlanner</string>
+    <string name="web_client_id_auth">827236383606-pgm7pdcucsnee70pf0c2h8emm8fq5fmj.apps.googleusercontent.com</string>
+    <string name="dish_plan">Dish plan</string>
+    <string name="grocery_list">Grocery list</string>
+    <string name="dish_history">Dish History</string>
+    <string name="error">Error</string>
+    <string name="no_connection_error_title">No Internet connection</string>
+    <string name="no_connection_error_text">Please check your internet connection and try again later.</string>
+    <string name="ok">OK</string>
+    <string name="welcome_to">Welcome to %s</string>
 </resources>
