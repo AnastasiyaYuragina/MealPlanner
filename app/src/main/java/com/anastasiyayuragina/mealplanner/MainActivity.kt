@@ -4,17 +4,11 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.anastasiyayuragina.mealplanner.ui.MainViewModel
@@ -57,11 +51,15 @@ class MainActivity : ComponentActivity() {
                 val navBackStackEntry by navController.currentBackStackEntryAsState()
                 currentRoute = navBackStackEntry?.destination?.route
                 val startDestination = remember {
-                    AuthRoutes.ENTRY
+                    AuthRoutes.SPLASH
                 }
 
                 Scaffold (
-                    bottomBar = { BottomNavigationBar(navController = navController) },
+                    bottomBar = {
+                        when(currentRoute) {
+                            AuthRoutes.AUTH -> BottomNavigationBar(navController = navController)
+                        }
+                                },
                     content = { innerPadding ->
                         NavHost(
                             modifier = Modifier.padding(innerPadding),

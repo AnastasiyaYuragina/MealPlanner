@@ -6,16 +6,22 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import com.anastasiyayuragina.mealplanner.ui.auth.AuthScreen
 import com.anastasiyayuragina.mealplanner.ui.auth.AuthViewModel
+import com.anastasiyayuragina.mealplanner.ui.auth.SplashScreen
 
 object AuthRoutes {
-    const val ENTRY = "entry_route"
+    const val SPLASH = "splash_route"
+    const val AUTH = "auth_route"
 }
 
 fun NavGraphBuilder.authNavigation(
     navController: NavController
 ) {
+    composable(route = AuthRoutes.SPLASH) {
+        SplashScreen(navController = navController)
+    }
+
     composable(
-        route = AuthRoutes.ENTRY
+        route = AuthRoutes.AUTH
     ) {
         val viewModel: AuthViewModel = hiltViewModel()
 

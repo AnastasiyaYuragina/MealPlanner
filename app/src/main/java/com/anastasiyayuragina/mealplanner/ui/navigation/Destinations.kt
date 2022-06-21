@@ -9,7 +9,11 @@ sealed class Destination(
     val params: Map<String, Any?> = mapOf()
 )
 
+object AuthDestination {
+    object SplashScreen : Destination(AuthRoutes.SPLASH)
 
+    object AuthScreen : Destination(AuthRoutes.AUTH)
+}
 
 fun NavController.navigateTo(destination: Destination) {
     navigate(destination.route)
